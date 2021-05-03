@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css?family=Teko:700");
+
+.teko-font-family {
+  font-family: "Teko", sans-serif;
+}
+
+#textAnimated {
+  display: none;
+}
+
+#titulo {
+  font-size: 11rem;
+  animation: elastic 1s ease-in-out infinite;
+  cursor: default;
+  font-family: "Teko";
+}
+
+.text-item {
+  @extend .teko-font-family;
+  display: inline-flex;
+  mix-blend-mode: multiply;
+
+  > div:hover {
+    transform: scale(2) !important;
+    transition: transform 0.2s ease-in-out;
+  }
+}
+
+.red {
+  color: #bd0419;
+}
+
+.yellow {
+  color: #d28910;
+}
+
+.green {
+  color: #018671;
+}
+
+.blue {
+  color: #0689bf;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+@keyframes elastic {
+  0%,
+  100% {
+    letter-spacing: -1.5rem;
+  }
+  50% {
+    letter-spacing: -0.5rem;
+  }
+}

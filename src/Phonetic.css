@@ -1,5 +1,6 @@
 .Phonetic {
   margin: 20px 0;
+  color: rgb(128, 25, 25);
 }
 
 .Phonetic a {
@@ -11,6 +12,7 @@
   font-weight: bold;
   border-radius: 20px;
   transition: all 150ms ease-in-out;
+  color: rgb(128, 25, 25);
 }
 
 .Phonetic a:hover {
@@ -21,4 +23,5 @@
 .Phonetic .text {
   opacity: 0.5;
   font-weight: bold;
+  color: rgb(128, 25, 25);
 }

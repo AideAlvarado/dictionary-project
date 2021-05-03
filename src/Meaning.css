@@ -2,10 +2,15 @@
   font-size: 24px;
   line-height: 1.5;
   font-weight: bold;
+  color: rgb(128, 25, 25);
 }
 
-.Meaning .example {
-  color: #70757a;
+.example {
+  color: rgb(128, 25, 25);
   font-style: italic;
   margin-top: 10px;
+}
+
+.definition {
+  color: rgb(128, 25, 25);
 }

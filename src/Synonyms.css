@@ -1,6 +1,7 @@
 .Synonyms {
   margin: 15px 0 0;
   padding: 0;
+  color: rgb(128, 25, 25);
 }
 
 .Synonyms li {
@@ -8,4 +9,5 @@
   display: inline-block;
   padding-right: 10px;
   line-height: 1;
+  color: rgb(128, 25, 25);
 }
