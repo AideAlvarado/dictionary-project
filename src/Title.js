@@ -1,16 +1,12 @@
-import { React, useState } from "react";
 import "./Title.css";
 
 export default function Title(props) {
-  let [titulo, setTitulo] = useState(props.titulo);
+  let titulo = "Dictionary";
   const app = document.querySelector("#titulo");
 
   const styles = ["green", "yellow", "red", "blue"];
   const degrees = ["0deg", "5deg", "10deg", "-5deg", "-10deg"];
   const sizes = ["lowercase", "uppercase"];
-  if (titulo != titulo) {
-    setTitulo(titulo);
-  }
   const getRndInteger = (min, max) => {
     return Math.floor(Math.random() * (max - min)) + min;
   };
