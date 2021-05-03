@@ -1,8 +1,10 @@
+import dotenv from "dotenv";
 import "./App.css";
 import Dictionary from "./Dictionary";
 import "./index.css";
 import Stars from "./stars";
 import Title from "./Title";
+dotenv.config();
 export default function App() {
   return (
     <div className="App">
