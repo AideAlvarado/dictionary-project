@@ -8,6 +8,9 @@ export default function Title(props) {
   const styles = ["green", "yellow", "red", "blue"];
   const degrees = ["0deg", "5deg", "10deg", "-5deg", "-10deg"];
   const sizes = ["lowercase", "uppercase"];
+  if (titulo != titulo) {
+    setTitulo(titulo);
+  }
   const getRndInteger = (min, max) => {
     return Math.floor(Math.random() * (max - min)) + min;
   };
