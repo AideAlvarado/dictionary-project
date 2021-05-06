@@ -4,16 +4,23 @@ import Dictionary from "./Dictionary";
 import "./index.css";
 import Stars from "./stars";
 import Title from "./Title";
+import Moon from "./Moon";
 dotenv.config();
+
 export default function App() {
   return (
     <div className="App">
+      {" "}
+      <div>
+        {" "}
+        <Moon />
+      </div>
       <div className="container">
         <header className="App-header">
-          <div className="moon animated infinite rubberBand delay-2s"></div>
           <Title titulo="dictionary" />
         </header>
         <Stars />
+
         <main>
           <Dictionary defaultKeyword="heaven" />
         </main>

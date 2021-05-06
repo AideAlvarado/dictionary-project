@@ -1,0 +1,56 @@
+.space div,
+html .space div,
+.stars div,
+.space div:after,
+html .space div:after,
+.stars div:after,
+.space div:before,
+html .space div:before,
+.stars div:before {
+  position: absolute;
+}
+.stars .luna {
+  background: #fef2bf; /*linear-gradient(145deg, #FEF2BF 10%, #FBE4C9 30%, #BBDED6 60%);*/
+  border-radius: 100%;
+  height: 180px;
+  left: 30%;
+  top: 10%;
+  width: 180px;
+
+  z-index: -100;
+}
+
+.stars .luna:before {
+  background: #fbe1b6;
+  border-radius: 100%;
+  box-shadow: inset -4px -3px 0 0 #e5cda6, 58px 10px 0 -4px #fbe1b6,
+    59px 10px 0 -3px #e5cda6, 63px 35px 0 -6px #fbe1b6, 64px 35px 0 -5px #e5cda6,
+    13px 45px 0 -7px #fbe1b6, 14px 45px 0 -6px #e5cda6, -9px 30px 0 -8px #fbe1b6,
+    -8px 31px 0 -7px #e5cda6, 9px 28px 0 -9px #fbe1b6, 8px 29px 0 -8px #e5cda6,
+    19px 18px 0 -7px #fbe1b6, 19px 19px 0 -6px #e5cda6, 88px 78px 0 -4px #fbe1b6,
+    89px 78px 0 -3px #e5cda6, 38px 68px 0 -2px #fbe1b6, 39px 68px 0 -1px #e5cda6,
+    99px -6px 0 -6px #fbe1b6, 99px -5px 0 -5px #e5cda6,
+    63px -35px 0 -6px #fbe1b6, 64px -35px 0 -5px #e5cda6,
+    9px 95px 0 -9px #fbe1b6, 8px 96px 0 -8px #e5cda6, 67px 115px 0 -8px #fbe1b6,
+    68px 116px 0 -7px #e5cda6, 105px 50px 0 -5px #fbe1b6,
+    106px 50px 0 -4px #e5cda6;
+  content: "";
+  height: 20px;
+  left: 20px;
+  top: 40px;
+  width: 20px;
+}
+
+@keyframes astronaut {
+  0% {
+    left: -15%;
+    transform: rotate(20deg);
+  }
+  50% {
+    left: 110%;
+  }
+  100% {
+    left: -15%;
+    transform: rotate(780deg);
+  }
+}

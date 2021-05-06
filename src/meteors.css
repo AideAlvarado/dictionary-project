@@ -1,0 +1,97 @@
+.meteors {
+  height: 20%;
+  position: absolute;
+  width: 80%;
+  z-index: 20;
+}
+
+.m1,
+.m2,
+.m3,
+.m4,
+.m5,
+.m6 {
+  background: radial-gradient(
+    ellipse farthest-corner at 35px -10px,
+    #fff 35%,
+    rgba(0, 0, 0, 0) 60%
+  );
+  border-radius: 20%;
+  height: 10px;
+  position: relative;
+  transform: rotate(210deg) scale(0.5);
+  width: 300px;
+}
+
+.m1 {
+  left: 20%;
+  top: 20%;
+  animation-delay: 2s;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-name: twinkle;
+}
+
+.m2 {
+  left: 40%;
+  top: 65%;
+}
+
+.m3 {
+  left: 60%;
+  top: 15%;
+  animation-delay: 2s;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-name: twinkle;
+}
+
+.m4 {
+  animation-delay: 2s;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-name: moves;
+  left: 80%;
+  top: 230%;
+}
+.m5 {
+  left: 40%;
+  top: 80%;
+}
+
+.m6 {
+  left: 10%;
+  top: 40%;
+}
+
+@keyframes moves {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  100% {
+    left: 90%%;
+    top: 70%;
+  }
+}
+
+@keyframes twinkle {
+  0% {
+    -webkit-filter: brightness(50%);
+  }
+  100% {
+    -webkit-filter: brightness(150%);
+  }
+}
+
+@keyframes daylight {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}

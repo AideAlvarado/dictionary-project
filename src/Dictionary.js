@@ -3,6 +3,7 @@ import axios from "axios";
 import Results from "./Results";
 import Photos from "./Photos";
 import "./Dictionary.css";
+import Meteors from "./meteors";
 
 export default function Dictionary(props) {
   let [keyword, setKeyword] = useState(props.defaultKeyword);
@@ -58,6 +59,7 @@ export default function Dictionary(props) {
             suggested words: sky, cloud, music, love...
           </div>
         </section>
+        <Meteors />
         <Results results={results} />
         <Photos photos={photos} />
       </div>
