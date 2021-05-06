@@ -16,8 +16,11 @@ html .space div:before,
   left: 30%;
   top: 10%;
   width: 180px;
-
   z-index: -100;
+  animation-delay: 1s;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-name: turn;
 }
 
 .stars .luna:before {
@@ -41,7 +44,7 @@ html .space div:before,
   width: 20px;
 }
 
-@keyframes astronaut {
+@keyframes turn {
   0% {
     left: -15%;
     transform: rotate(20deg);
